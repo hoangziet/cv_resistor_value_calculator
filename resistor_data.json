@@ -1,0 +1,26 @@
+{
+    "COLOR_CODES": {
+      "BLACK": 0,
+      "BROWN": 1,
+      "RED": 2,
+      "ORANGE": 3,
+      "YELLOW": 4,
+      "GREEN": 5,
+      "BLUE": 6,
+      "VIOLET": 7,
+      "GREY": 8,
+      "WHITE": 9,
+      "GOLD": 0.1,
+      "SILVER": 0.01
+    },
+    "TOLERANCE": {
+      "BROWN": "1%",
+      "RED": "2%",
+      "GREEN": "0.5%",
+      "BLUE": "0.25%",
+      "VIOLET": "0.1%",
+      "GREY": "0.05%",
+      "GOLD": "5%",
+      "SILVER": "10%"
+    }
+}
