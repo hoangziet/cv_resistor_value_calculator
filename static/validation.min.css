@@ -1,0 +1,14 @@
+﻿
+
+
+.validation-summary-valid,field-validation-valid {
+    display: none;
+}
+
+
+
+span.field-validation-warning:before {
+    font-family: "MouserIcons";
+    content: "";
+    padding-right: 5px;
+}

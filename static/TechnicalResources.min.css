@@ -1,0 +1,357 @@
+﻿#left-button {
+    float: left;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: -3px;
+    z-index: 1
+}
+
+#right-button {
+    float: left;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 15px
+}
+
+body {
+    font-family: Arial,Helvetica,sans-serif
+}
+
+.number-of-results {
+    font-family: Arial;
+    font-size: 1.3rem;
+    color: #585d62;
+    margin-top: 3.2rem;
+    min-height: 13px
+}
+
+@media (min-width: 1200px) {
+    .responsive .number-of-results {
+        padding-left:0
+    }
+}
+
+@media (max-width: 767px) {
+    .number-of-results {
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 3.2rem
+    }
+
+    .responsive .conversion-calc-sm-input {
+        width: auto
+    }
+
+    .responsive .calculator-title {
+        font-size: 30px
+    }
+
+    .responsive .resistor-calc-parameter {
+        width: 100%
+    }
+
+    .responsive #resistor-calculator-viewAll {
+        width: 100%
+    }
+}
+
+.calculate-button {
+    padding: 6px 20px;
+    margin-bottom: 32px
+}
+
+.calculator-link {
+    font-size: 14px;
+    padding: 2px 0;
+    width: 100%
+}
+
+.calculator-header {
+    height: auto;
+    margin-top: -10px;
+    background-color: #e0e4e9;
+    padding: 15px 15px 0 15px
+}
+
+.calculator-title {
+    font-size: 34px!important;
+    margin: 0
+}
+
+.calculator-options {
+    width: 100%;
+    height: 45px
+}
+
+.calculator-options-text {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: inherit
+}
+
+.conversion-calculator-hide {
+    display: none!important
+}
+
+.resistor-calc-parameter {
+    width: 50%;
+    float: left;
+    padding: 5px 0 5px 5px
+}
+
+.conversion-calculator-parameter {
+    margin-bottom: 15px
+}
+
+.conversion-calc-labels {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px
+}
+
+.resistor-calc-labels {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px
+}
+
+.resistor-calc-input {
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 4px 6px
+}
+
+.conversion-calc-input {
+    border-radius: 4px;
+    height: 40px;
+    font-size: 16px;
+    padding: 4px 6px;
+    border: 1px solid #a9a9a9
+}
+
+.conversion-calc-sm-input {
+    width: 80%
+}
+
+.calculator-results {
+    background-color: #e0e4e9;
+    border: 1px solid #a9a9a9;
+    color: #333!important
+}
+
+.resistor-container {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 20px 0;
+    margin-top: 20px
+}
+
+.resistor {
+    margin-left: 10%
+}
+
+.resistor>* {
+    display: inline-block;
+    margin-left: -4px;
+    background-color: hsl(213deg,17%,90%)
+}
+
+.resistor .resistor-stick {
+    width: 9%;
+    padding-top: 2%;
+    margin-bottom: 9.5%
+}
+
+.resistor .resistor-stick.left {
+    border-radius: 10px 0 0 10px
+}
+
+.resistor .resistor-stick.right {
+    border-radius: 0 10px 10px 0
+}
+
+.resistor .left-left,.resistor .right-left {
+    border-radius: 8px 0 0 8px;
+    width: 9%;
+    padding-top: 20%
+}
+
+.resistor .left-right,.resistor .right-right {
+    border-radius: 0 8px 8px 0;
+    width: 9%;
+    padding-top: 20%
+}
+
+.resistor .left-band,.resistor .right-band {
+    padding-top: 20%!important;
+    margin-bottom: 0!important
+}
+
+.resistor .band,.resistor .band-spacing {
+    position: relative;
+    width: 3%;
+    padding-top: 15.5%;
+    margin-bottom: 2%
+}
+
+.resistor .band-spacing.none,.resistor .band.none {
+    background-color: hsl(213deg,17%,90%)
+}
+
+.resistor .band-spacing.black,.resistor .band.black {
+    background-color: hsl(0deg,0%,0%)
+}
+
+.resistor .band-spacing.brown,.resistor .band.brown {
+    background-color: hsl(30deg,100%,29%)
+}
+
+.resistor .band-spacing.red,.resistor .band.red {
+    background-color: hsl(0deg,100%,50%)
+}
+
+.resistor .band-spacing.orange,.resistor .band.orange {
+    background-color: hsl(30deg,100%,50%)
+}
+
+.resistor .band-spacing.yellow,.resistor .band.yellow {
+    background-color: hsl(60deg,100%,50%)
+}
+
+.resistor .band-spacing.green,.resistor .band.green {
+    background-color: hsl(120deg,100%,50%)
+}
+
+.resistor .band-spacing.blue,.resistor .band.blue {
+    background-color: hsl(240deg,100%,50%)
+}
+
+.resistor .band-spacing.violet,.resistor .band.violet {
+    background-color: hsl(274deg,100%,50%)
+}
+
+.resistor .band-spacing.grey,.resistor .band.grey {
+    background-color: hsl(0deg,0%,50%)
+}
+
+.resistor .band-spacing.white,.resistor .band.white {
+    background-color: hsl(0deg,100%,100%)
+}
+
+.resistor .band-spacing.gold,.resistor .band.gold {
+    background-color: hsl(46deg,65%,52%)
+}
+
+.resistor .band-spacing.silver,.resistor .band.silver {
+    background-color: hsl(0deg,0%,75%)
+}
+
+.resistor .band-spacing.band-hide,.resistor .band.band-hide {
+    background-color: #e0e4e9
+}
+
+.calculator-button-row {
+    margin-bottom: 16px;
+    margin-top: 16px
+}
+
+.resistor-calculator-button {
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px
+}
+
+.conversion-calculator-button {
+    padding: 6px 15px
+}
+
+.conversion-calculator-button-link {
+    border-bottom: 1px solid #0070bb;
+    padding: 4px 3px 0;
+    color: #0070bb
+}
+
+.conversion-calculator-button-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #0070bb
+}
+
+.tooltip-wrapper {
+    display: inline-block
+}
+
+.tooltip-wrapper .conversion-calculator-button[disabled] {
+    pointer-events: none
+}
+
+.tooltip-wrapper.disabled {
+    cursor: not-allowed
+}
+
+.resistor-chart {
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 16px
+}
+
+.conversion-calculator-chart-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.resistor-chart-img {
+    width: 630px
+}
+
+.conversion-calculator-feedback-link {
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer
+}
+
+.conversion-calculator-feedback {
+    padding: 0
+}
+
+.conversion-calculator-feedback-header {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.conversion-calculator-feedback-comments {
+    height: 137px!important
+}
+
+.conversion-calculator-back {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 700
+}
+
+.conversion-calculator-alert {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%
+}
+
+.conversion-calculator-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 0
+}
